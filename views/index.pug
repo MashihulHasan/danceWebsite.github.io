@@ -1,0 +1,54 @@
+//- index.pug
+doctype html
+html
+  head
+    title Hasan Dance Academy
+    style
+      include ../static/style.css
+  body
+    nav#navbar
+        ul
+            li #[a(href="/") Home]
+            li #[a(href="/") Events]
+            li #[a(href="/") Offers]
+            li #[a(href="/") About]
+            li #[a(href="/") Contact]
+    
+    section#introSection
+        h2  Welcome to Hasan's Dance Academy
+        h3 Eat Sleep Dance Repeat
+    section#missionSection
+        h2 Our Mission
+        div.card
+            h3 Dance Perfection
+            .card-box 
+                .card-img
+                    img(src="/static/card1.jpg", alt="")
+                .card-content 
+                        p This is the best dance academy of the universe
+        div.card
+            h3 Dance the Way You Like
+            .card-box 
+                .card-img
+                    img(src="/static/card3.png", alt="")
+                .card-content 
+                    p This is the best dance academy of the universe
+        div.card
+            h3 Learn With Experts
+            .card-box 
+                .card-img
+                    img(src="/static/card2.png", alt="")
+                .card-content 
+                    p This is the best dance academy of the universe
+
+    section#sponsorSection
+        h2 Our Sponsor.
+        div#sponsors 
+            img(src="/static/apple.jpg", alt="Image Loading" class="spimage")
+            img(src="/static/microsoft.png", alt="Image Loading" class="spimage")
+            img(src="/static/hp.png", alt="Image Loading" class="spimage")
+            img(src="/static/skype.png", alt="Image Loading" class="spimage")
+    footer#footer 
+        | Copyright 2021 MHDevelopers.com | All rights reserved.
+    script
+      include ../static/index.js
